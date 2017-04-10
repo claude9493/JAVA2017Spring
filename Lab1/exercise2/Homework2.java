@@ -1,4 +1,4 @@
-package exercise;
+package exercise2;
 
 import java.util.Scanner;
 //Shift + Ctrl + O = autoimport

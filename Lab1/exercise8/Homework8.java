@@ -1,4 +1,4 @@
-package exercise;
+package exercise8;
 
 public class Homework8 {
 
