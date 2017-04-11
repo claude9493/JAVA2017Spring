@@ -1,12 +1,12 @@
 package array_class_methods;
 
 import java.util.Arrays;
-import java.util.ArrayList;
+//import java.util.ArrayList;
 
 public class ArrayMainpulations {
 
 	public static void main(String[] args) {
-		ArrayList e= new ArrayList<String>();
+//		ArrayList e= new ArrayList<String>();
 		double[] doubleArray = {8.4, 9.3, 0.2, 7.9, 3.4 };
 //		SORT array
 		Arrays.sort(doubleArray);
