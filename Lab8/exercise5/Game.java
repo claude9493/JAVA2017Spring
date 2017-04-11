@@ -4,15 +4,14 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Game {
-	// input answer and return the decision whether the answer is right
+	 // input answer and return the decision whether the answer is right
+	static Scanner input = new Scanner(System.in);
 	public static boolean Try(int real_answer) {
-		Scanner input = new Scanner(System.in);
 		int answer = input.nextInt();
+		return (answer == real_answer ? true : false);
 		// <using for test>System.out.println(answer == real_answer? "True": "False");
 		// input.close(); WHY this statement cannot be used ??? once I remove
-		// the comment token, the complier gives an exception!!!
-
-		return (answer == real_answer ? true : false);
+		// the comment token, the complier gives an exception!!		
 	}
 
 	// one value
@@ -70,7 +69,9 @@ public class Game {
 		case 3:
 			playgame(a, b, c);
 			break;
+			
 		}
+		input.close();
 
 	}
 
