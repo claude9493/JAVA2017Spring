@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Game {
 	 // input answer and return the decision whether the answer is right
 	static Scanner input = new Scanner(System.in);
+	
 	public static boolean Try(int real_answer) {
 		int answer = input.nextInt();
 		return (answer == real_answer ? true : false);
@@ -55,9 +56,11 @@ public class Game {
 			break;
 		case 2:
 			switch (randomnumber.nextInt(3) + 1) {
+			
 			case 1:
 				playgame(b, c);
 				break;
+				
 			case 2:
 				playgame(a, c);
 				break;
@@ -66,6 +69,7 @@ public class Game {
 				break;
 			}
 			break;
+			
 		case 3:
 			playgame(a, b, c);
 			break;
