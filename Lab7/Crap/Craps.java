@@ -1,4 +1,4 @@
-package exercise5;
+package Crap;
 
 public class Craps {
 

@@ -1,6 +1,6 @@
-package exercise1;
+package Day_Mood;
 
-import exercise1.Day_Mood.Day;
+import Day_Mood.Day_Mood.Day;
 
 public class Day_Mood_Test {
 

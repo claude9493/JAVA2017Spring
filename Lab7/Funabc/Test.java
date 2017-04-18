@@ -1,4 +1,4 @@
-package exercise3;
+package Funabc;
 
 public class Test {
 	int a = 1;

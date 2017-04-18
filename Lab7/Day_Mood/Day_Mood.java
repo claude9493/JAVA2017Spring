@@ -1,4 +1,4 @@
-package exercise1;
+package Day_Mood;
 
 public class Day_Mood {
 	public static enum Day {

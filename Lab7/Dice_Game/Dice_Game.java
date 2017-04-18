@@ -1,4 +1,4 @@
-package exercise2;
+package Dice_Game;
 
 import java.util.Random;
 
