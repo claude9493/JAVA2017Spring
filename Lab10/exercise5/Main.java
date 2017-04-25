@@ -45,8 +45,8 @@ public class Main
 //					}
 //				}
 //				if(wheather_find == 0)
-				if(wheather_find(studentManager, num) != -1)
-					studentManager.display(studentManager.list.get(wheather_find(studentManager,num)));
+				if(whether_find(studentManager, num) != -1)
+					studentManager.display(studentManager.list.get(whether_find(studentManager,num)));
 				else
 					System.out.println("The student doesn't exist.");
 				break;
@@ -63,8 +63,8 @@ public class Main
 //					}
 //				}
 //				if(wheatherFind == 0)
-				if(wheather_find(studentManager, No) != -1)
-					studentManager.deleteStudent(studentManager.list.get(wheather_find(studentManager,No)));
+				if(whether_find(studentManager, No) != -1)
+					studentManager.deleteStudent(studentManager.list.get(whether_find(studentManager,No)));
 				else
 					System.out.println("The student doesn't exist.");
 				break;
@@ -72,8 +72,8 @@ public class Main
 				System.out.println("Input the student number and his new grade:\t");
 				String Noo = input.next();
 				int grade = input.nextInt();
-				if(wheather_find(studentManager, Noo) != -1)
-					studentManager.modifyGrade(studentManager.list.get(wheather_find(studentManager,Noo)),grade);
+				if(whether_find(studentManager, Noo) != -1)
+					studentManager.modifyGrade(studentManager.list.get(whether_find(studentManager,Noo)),grade);
 				else
 					System.out.println("The student doesn't exist.");
 				break;
@@ -87,7 +87,7 @@ public class Main
 		}
 	}
 	
-	public static int wheather_find(StudentManager s, String NO){
+	public static int whether_find(StudentManager s, String NO){
 		for(Student ss : s.list){
 			String temNO = ss.get_No();
 			if(Integer.parseInt(temNO) == Integer.parseInt(NO))
