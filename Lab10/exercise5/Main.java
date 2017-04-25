@@ -9,6 +9,11 @@ public class Main
 	{
 		Scanner input = new Scanner(System.in);
 		StudentManager studentManager = new StudentManager();
+//		
+//		Student student1= new Student();
+//		student1.set_No("1");
+//		studentManager.add_Student(student1);
+		
 		while(true)
 		{
 //			StudentManager studentManager = new StudentManager();
@@ -21,8 +26,7 @@ public class Main
 			case 1:
 				System.out.println("Create a new student:");
 				Student student = new Student();
-				String Studentnumber = input.next();
-				student.set_No(Studentnumber);
+				student.set_No(input.next());
 				student.set_name(input.next());
 				student.set_grade(input.nextInt());
 				studentManager.add_Student(student);
@@ -48,7 +52,7 @@ public class Main
 				break;
 			case 3:
 				System.out.println("Input the student number:\t");
-				String No = input.nextLine();
+				String No = input.next();
 //				int wheatherFind = 0;
 //				for(Student s : studentManager.list)
 //				{
@@ -72,6 +76,7 @@ public class Main
 					studentManager.modifyGrade(studentManager.list.get(wheather_find(studentManager,Noo)),grade);
 				else
 					System.out.println("The student doesn't exist.");
+				break;
 			case 5:
 				System.exit(0);
 				break;//这个break是不是有点多余了???
@@ -83,11 +88,16 @@ public class Main
 	}
 	
 	public static int wheather_find(StudentManager s, String NO){
-		for(int i = 0; i < s.list.size(); i++){
-			if (NO == s.list.get(i).get_No())
-				return i;
+		for(Student ss : s.list){
+			String temNO = ss.get_No();
+			if(Integer.parseInt(temNO) == Integer.parseInt(NO))
+//				此处，永久的记忆，String是reference型，直接比较没有效果！！！
+			{
+				return s.list.indexOf(ss);
+			}
 		}
 		return -1;
+				
 	}
 	
 }
