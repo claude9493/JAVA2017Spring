@@ -13,6 +13,8 @@
 	<classpathentry kind="src" path="GUI_Self_Study"/>
 	<classpathentry kind="src" path="Deeper_Look"/>
 	<classpathentry kind="src" path="Lab9"/>
+	<classpathentry kind="src" path="IO"/>
+	<classpathentry kind="src" path="Lab10"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="/org.eclipse.swt"/>
 	<classpathentry kind="output" path="bin"/>
