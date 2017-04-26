@@ -1,4 +1,9 @@
 package exercise4;
+/*
+ * 注意： 在 case 1 和 case -1 时，若以 for循环中变量从0递增到ob.length 作为循环计数条件，而for循环中还进行了ob.remove(something)的操作
+ * 这样会有逻辑错误，因为 ob 的长度在循环中被改变，而for循环的条件中的ob.length不会随之而变。 
+ * 就会看起来正确，但是有错误。
+ */
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -15,12 +20,12 @@ public class ORZ {
 		while(true)
 		{
 			int rand_num = rand.nextInt(21)-10;
-			
+			System.out.print("rand_number is: " + rand_num + "\t");
 			switch(rand_num){
 			case 0: 
 				break;
 			case 1: 
-				for(int i = 0; i < ob.size();i++){
+				for(int i = ob.size()-1; i >= 0; i--){
 					if(ob.get(i) > 0)
 						ob.remove(i);
 				}
@@ -29,7 +34,7 @@ public class ORZ {
 				System.out.println();
 				break;
 			case -1:
-				for(int i = 0; i < ob.size(); i++){
+				for(int i = ob.size()-1; i >= 0; i--){
 					if(ob.get(i) < 0)
 						ob.remove(i);
 				}
@@ -39,7 +44,7 @@ public class ORZ {
 				
 				break;
 			case 10:
-				Collections.sort(ob);
+				Collections.sort(ob);//ArrayList sort
 				for(int j : ob)
 					System.out.print(j + " ");
 				System.out.println();
@@ -55,7 +60,7 @@ public class ORZ {
 				break;
 			}
 			count++;
-			if(rand_num == 0 || rand_num == 1 || rand_num == -1 || rand_num == 10 || rand_num == -10)
+			if(rand_num == 0)
 				break;
 		}
 		System.out.printf("%d times are needed to break the while loop",count);

@@ -1,5 +1,6 @@
 package exercise2_3;
 
+//import java.util.Array;
 public class Matrix {
 	
 	public static double[][] addMatrix(double[][] a, double[][] b){
@@ -70,8 +71,10 @@ public class Matrix {
 			for(double j : i){
 				System.out.printf("%-5.1f ",j);
 			}
+//			i.toString();
 		System.out.println();
 		}
+//		a.deepToString();
 		System.out.println();
 	}
 	

@@ -32,7 +32,7 @@ public class Main
 				studentManager.add_Student(student);
 				break;
 			case 2:
-				System.out.println("Input the student number:\t");
+				System.out.println("Inquire a student's information.\nInput the student number:\t");
 				String num = input.next();
 //				int wheather_find = 0;//0:not found;1:successfully found
 //				for(Student s : studentManager.list)
@@ -51,7 +51,7 @@ public class Main
 					System.out.println("The student doesn't exist.");
 				break;
 			case 3:
-				System.out.println("Input the student number:\t");
+				System.out.println("Delete a student.\nInput the student number:\t");
 				String No = input.next();
 //				int wheatherFind = 0;
 //				for(Student s : studentManager.list)
@@ -69,7 +69,7 @@ public class Main
 					System.out.println("The student doesn't exist.");
 				break;
 			case 4:
-				System.out.println("Input the student number and his new grade:\t");
+				System.out.println("Update a student's information.\nInput the student number and his new grade:\t");
 				String Noo = input.next();
 				int grade = input.nextInt();
 				if(whether_find(studentManager, Noo) != -1)
