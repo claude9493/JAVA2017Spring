@@ -5,15 +5,9 @@
 	Codes here are all writen by me while learning JAVA in spring of 2017. Some of them belong to homework and others are imitation of books'program.
 +	代码一般都有注释，可以参考学习。<br>
 	Always there are comments	which are provided for learning.
-+	持续保持更新。<br>
-	I will try my best to keep updating!
-+	我会抽时间把题目上传到GitHub。<br>
++	<s>持续保持更新</s>。<br>
+	<s>I will try my best to keep updating!</s>
++	现在已基本停止对本仓库的更新<br>
+	Till now, I basicly stop to update this repository. Because I'm a Junior student of Statistics, who may never touch Java any more.
++	我会抽时间把题目上传到GitHub。有机会整理一下...<br>
 	I will update the problem of the codes to GitHub.
-+	我来自南方科技大学，这是我校[官网的链接]。  
-	I'm from Sustech, here is the [website of my school].
-
-
-
-[官网的链接]:	http://www.sustc.edu.cn 
-
-[website of my school]:	http://www.sustc.edu.cn 
